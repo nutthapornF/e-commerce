@@ -4,7 +4,6 @@ import styled from "styled-components";
 //images =[] ( set initial value to the image when its loading and the value is undifine cuz otherwise the site will break)
 const ProductImages = ({ images = [{ url: "" }] }) => {
   const [main, setMain] = useState(images[0]);
-  console.log(main);
   return (
     <Wrapper>
       <img src={main.url} alt={"main img"} className="main" />
